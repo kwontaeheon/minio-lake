@@ -1,2 +1,6 @@
-work/metastore_db
-data
+work/metastore_db/
+data/
+
+.ipynb_checkpoints
+*.jar
+*.log
