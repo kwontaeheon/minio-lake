@@ -1,3 +1,0 @@
-{"commitInfo":{"version":0,"timestamp":1652234515501,"userId":"trino","userName":"trino","operation":"CREATE TABLE","operationParameters":{"queryId":"20220511_020155_00004_p8b5y"},"clusterId":"trino-380-trino","readVersion":0,"isolationLevel":"WriteSerializable","blindAppend":true}}
-{"protocol":{"minReaderVersion":1,"minWriterVersion":2}}
-{"metaData":{"id":"63171de6-ff64-4c7c-a97c-cbd1aba86fd7","format":{"provider":"parquet","options":{}},"schemaString":"{\"fields\":[{\"metadata\":{},\"name\":\"id\",\"nullable\":true,\"type\":\"string\"}],\"type\":\"struct\"}","partitionColumns":[],"configuration":{},"createdTime":1652234515501}}
