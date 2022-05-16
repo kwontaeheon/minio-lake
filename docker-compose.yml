@@ -1,0 +1,81 @@
+version: '3.7'
+services:
+  trino:
+    hostname: trino
+    image: 'trinodb/trino:380'
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./etc:/etc/trino
+    networks:
+      - trino-network
+
+  mariadb:
+    hostname: mariadb
+    image: mariadb:10.5.8
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: '#2203sdf'
+      MYSQL_USER: hive
+      MYSQL_PASSWORD: '#2203sdf'
+      MYSQL_DATABASE: metastore_db
+    volumes:
+      - ./mysql-initdb.d:/docker-entrypoint-initdb.d
+    networks:
+      - trino-network
+
+  hive-metastore:
+    hostname: hive-metastore
+    image: 'bitsondatadev/hive-metastore:latest'
+    ports:
+      - '9083:9083' # Metastore Thrift
+    volumes:
+      - ./conf/metastore-site.xml:/opt/apache-hive-metastore-3.0.0-bin/conf/metastore-site.xml:ro
+    environment:
+      METASTORE_DB_HOSTNAME: mariadb
+    depends_on:
+      - mariadb
+    networks:
+      - trino-network
+
+  minio:
+    hostname: minio
+    image: 'minio/minio:RELEASE.2021-01-08T21-18-21Z'
+    container_name: minio
+    ports:
+      - '9000:9000'
+    volumes:
+      - ./data:/data
+    environment:
+      MINIO_ACCESS_KEY: hive
+      MINIO_SECRET_KEY: '#202203sdf'
+    command: server /data
+    networks:
+      - trino-network
+
+  jupyter:
+    image: 'jupyter/all-spark-notebook:latest'
+    ports:
+      - '8800:8888'
+      - '4040:4040'
+    environment:
+      JUPYTER_TOKEN: rnjsxogjs@1
+      PYSPARK_SUBMIT_ARGS: --packages org.apache.iceberg:iceberg-spark-runtime-3.2_2.12:0.13.1,org.apache.iceberg:iceberg-hive-runtime:0.13.1,org.apache.hadoop:hadoop-aws:3.3.1,software.amazon.awssdk:bundle:2.15.40,software.amazon.awssdk:url-connection-client:2.15.40 --conf spark.sql.catalog.spark_catalog=org.apache.iceberg.spark.SparkSessionCatalog --conf spark.sql.catalog.spark_catalog.type=hive --conf spark.sql.catalog.spark_catalog.cache-enabled=false  --conf spark.sql.catalog.spark_catalog.warehouse=s3a://hive/ --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem --conf spark.sql.catalog.spark_catalog.uri=thrift://hive-metastore:9083 --conf spark.sql.catalog.spark_catalog.hadoop.fs.s3a.endpoint=http://minio:9000 --conf spark.sql.catalog.spark_catalog.s3a.endpoint=http://minio:9000 --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions pyspark-shell
+      AWS_ACCESS_KEY_ID: hive
+      AWS_SECRET_ACCESS_KEY: '#202203sdf'
+      AWS_REGION: us-east-1
+    volumes:
+      - ./work:/home/jovyan/work
+      - ./hive-site.xml:/usr/local/spark/conf/hive-site.xml
+      - ./core-site.xml:/usr/local/spark/conf/core-site.xml
+    networks:
+      - trino-network
+
+#volumes:
+#  minio-data:
+#    driver: local
+
+networks:
+  trino-network:
+    driver: bridge

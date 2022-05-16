@@ -1,0 +1,95 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "75f963a6-5f55-4f81-bf66-25106d713977",
+  "location" : "s3a://hive/tbltestpython",
+  "last-updated-ms" : 1652710353983,
+  "last-column-id" : 1,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "jovyan"
+  },
+  "current-snapshot-id" : 922976776379431681,
+  "snapshots" : [ {
+    "snapshot-id" : 5147468758694258779,
+    "timestamp-ms" : 1652710351393,
+    "summary" : {
+      "operation" : "delete",
+      "spark.app.id" : "local-1652710282784",
+      "changed-partition-count" : "0",
+      "total-records" : "0",
+      "total-files-size" : "0",
+      "total-data-files" : "0",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://hive/tbltestpython/metadata/snap-5147468758694258779-1-e89ac123-39af-4b2f-bcd4-7b6a8611a137.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 922976776379431681,
+    "parent-snapshot-id" : 5147468758694258779,
+    "timestamp-ms" : 1652710353983,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1652710282784",
+      "added-data-files" : "2",
+      "added-records" : "5",
+      "added-files-size" : "858",
+      "changed-partition-count" : "1",
+      "total-records" : "5",
+      "total-files-size" : "858",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://hive/tbltestpython/metadata/snap-922976776379431681-1-5641b786-d522-4dcc-b119-020bcf9bc4ed.avro",
+    "schema-id" : 0
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1652710351393,
+    "snapshot-id" : 5147468758694258779
+  }, {
+    "timestamp-ms" : 1652710353983,
+    "snapshot-id" : 922976776379431681
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1652710350531,
+    "metadata-file" : "s3a://hive/tbltestpython/metadata/00000-fed01499-3b07-4028-ae7b-a08585ffee48.metadata.json"
+  }, {
+    "timestamp-ms" : 1652710351393,
+    "metadata-file" : "s3a://hive/tbltestpython/metadata/00001-7e0975d3-88b8-4440-89b2-747bd04fa028.metadata.json"
+  } ]
+}

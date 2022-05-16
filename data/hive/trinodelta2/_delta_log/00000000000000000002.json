@@ -1,0 +1,3 @@
+{"commitInfo":{"version":2,"timestamp":1652235069077,"userId":"trino","userName":"trino","operation":"UPDATE","operationParameters":{"queryId":"20220511_021109_00029_63mpi"},"clusterId":"trino-380-trino","readVersion":0,"isolationLevel":"WriteSerializable","blindAppend":true}}
+{"remove":{"path":"20220511_021039_00027_63mpi-e5fb2ed5-c647-46f8-8bc6-9ee73dadef9a","deletionTimestamp":1652235069091,"dataChange":true}}
+{"add":{"path":"20220511_021109_00029_63mpi_70890a9f-b3ec-457e-85c9-39c3c72c46b4","partitionValues":{},"size":320,"modificationTime":1652235069012,"dataChange":true,"stats":"{\"numRecords\":5,\"minValues\":{\"id\":\"100\"},\"maxValues\":{\"id\":\"5\"},\"nullCount\":{\"id\":0}}","tags":{}}}

@@ -1,0 +1,2 @@
+{"commitInfo":{"version":1,"timestamp":1652245354739,"userId":"trino","userName":"trino","operation":"WRITE","operationParameters":{"queryId":"20220511_050235_00023_gnbtj"},"clusterId":"trino-380-trino","readVersion":0,"isolationLevel":"WriteSerializable","blindAppend":true}}
+{"add":{"path":"20220511_050235_00023_gnbtj-3647ea21-4935-438d-b306-1cfd36bc444a","partitionValues":{},"size":309,"modificationTime":1652245354471,"dataChange":true,"stats":"{\"numRecords\":4,\"minValues\":{\"id\":\"1\"},\"maxValues\":{\"id\":\"4\"},\"nullCount\":{\"id\":0}}","tags":{}}}

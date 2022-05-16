@@ -1,0 +1,95 @@
+{
+  "format-version" : 1,
+  "table-uuid" : "14c02efa-4516-40ee-a333-46a0d34f77b7",
+  "location" : "s3a://hive/{tableName}",
+  "last-updated-ms" : 1652710357857,
+  "last-column-id" : 1,
+  "schema" : {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    } ]
+  },
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    } ]
+  } ],
+  "partition-spec" : [ ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "jovyan"
+  },
+  "current-snapshot-id" : 8193396604282527773,
+  "snapshots" : [ {
+    "snapshot-id" : 366765622371814480,
+    "timestamp-ms" : 1652710356989,
+    "summary" : {
+      "operation" : "delete",
+      "spark.app.id" : "local-1652710282784",
+      "changed-partition-count" : "0",
+      "total-records" : "0",
+      "total-files-size" : "0",
+      "total-data-files" : "0",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://hive/{tableName}/metadata/snap-366765622371814480-1-7a1e8b5b-8e6a-4e85-896a-47289d5b3adc.avro",
+    "schema-id" : 0
+  }, {
+    "snapshot-id" : 8193396604282527773,
+    "parent-snapshot-id" : 366765622371814480,
+    "timestamp-ms" : 1652710357857,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1652710282784",
+      "added-data-files" : "2",
+      "added-records" : "4",
+      "added-files-size" : "856",
+      "changed-partition-count" : "1",
+      "total-records" : "4",
+      "total-files-size" : "856",
+      "total-data-files" : "2",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "s3a://hive/{tableName}/metadata/snap-8193396604282527773-1-7925dc6f-d7a0-4f66-be9f-4263f8999396.avro",
+    "schema-id" : 0
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1652710356989,
+    "snapshot-id" : 366765622371814480
+  }, {
+    "timestamp-ms" : 1652710357857,
+    "snapshot-id" : 8193396604282527773
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1652710356231,
+    "metadata-file" : "s3a://hive/{tableName}/metadata/00000-5f143532-e4bd-4657-b71d-c8687e4bcfa1.metadata.json"
+  }, {
+    "timestamp-ms" : 1652710356989,
+    "metadata-file" : "s3a://hive/{tableName}/metadata/00001-27939a6c-fd56-44b6-aa45-5ab697888b84.metadata.json"
+  } ]
+}

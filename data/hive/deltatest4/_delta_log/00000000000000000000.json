@@ -1,0 +1,3 @@
+{"protocol":{"minReaderVersion":1,"minWriterVersion":2}}
+{"metaData":{"id":"972f4b9e-797f-40ec-a153-24c2a4bd53ae","format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"id\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}}]}","partitionColumns":[],"configuration":{},"createdTime":1652255648428}}
+{"commitInfo":{"timestamp":1652255648497,"operation":"CREATE OR REPLACE TABLE","operationParameters":{"isManaged":"false","description":null,"partitionBy":"[]","properties":"{}"},"isolationLevel":"Serializable","isBlindAppend":true,"operationMetrics":{},"engineInfo":"Apache-Spark/3.2.1 Delta-Lake/1.2.1","txnId":"8ca9b205-fd40-4331-bdad-4cea8ce3dcfa"}}
