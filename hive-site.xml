@@ -124,7 +124,7 @@
    </property>
 <property>
       <name>fs.s3a.secret.key</name>
-      <value>#2203sdf</value>
+      <value>#202203sdf</value>
    </property>
   <!--
     <property>

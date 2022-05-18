@@ -7,8 +7,10 @@ services:
       - '8080:8080'
     volumes:
       - ./etc:/etc/trino
+      - ./trino-entrypoint.sh:/trino-entrypoint.sh
     networks:
       - trino-network
+    command: /trino-entrypoint.sh
 
   mariadb:
     hostname: mariadb
@@ -22,6 +24,7 @@ services:
       MYSQL_DATABASE: metastore_db
     volumes:
       - ./mysql-initdb.d:/docker-entrypoint-initdb.d
+      # - ./mysql-data:/var/lib/mysql
     networks:
       - trino-network
 
@@ -47,10 +50,12 @@ services:
       - '9000:9000'
     volumes:
       - ./data:/data
+      - ./minio-entrypoint.sh:/minio-entrypoint.sh
     environment:
       MINIO_ACCESS_KEY: hive
       MINIO_SECRET_KEY: '#202203sdf'
-    command: server /data
+    entrypoint: /minio-entrypoint.sh
+    # command: server /data
     networks:
       - trino-network
 
