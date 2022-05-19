@@ -1,7 +1,8 @@
 /work/metastore_db/
 /work/spark-warehouse/
 /data
-
+__pycache__/
+logs/
 .ipynb_checkpoints/
 *.jar
 *.log
