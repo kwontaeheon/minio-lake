@@ -24,7 +24,7 @@ import json
 import pendulum
 
 from airflow.decorators import dag, task
-from trino.dbapi import connect
+
 # [END import_module]
 
 
@@ -43,11 +43,7 @@ def crawl_nft_info():
     # [END instantiate_dag]
 
     # [START extract]
-    @task.virtualenv(
-            use_dill=True,
-            system_site_packages=True,
-            requirements=[''],
-        )
+    @task()
     def extract():
         """
         #### Extract task
@@ -56,19 +52,26 @@ def crawl_nft_info():
         hardcoded JSON string.
         """
         print('connecting..')
+        from trino.dbapi import connect
         conn = connect(
-            host="minio-lake_trino_1",
+            host="trino",
             port=8080,
             user="trino",
             catalog="iceberg",
-            schema="hive",
+            schema="default",
         )
         print('connected')
         import json
         cur = conn.cursor()
-        cur.execute("select * from iceberg_trino1")
+        cur.execute("create schema if not exists iceberg.hive with (location='s3a://hive/')")
+        cur.execute("create table if not exists iceberg.hive.iceberg_trino1(id varchar)")
+
+        cur.execute("select * from iceberg.hive.iceberg_trino1")
+        
         rows = cur.fetchall()
         print(rows)
+        conn.close()
+        
         data_string = '{"1001": 301.27, "1002": 433.21, "1003": 502.22}'
 
         order_data_dict = json.loads(data_string)

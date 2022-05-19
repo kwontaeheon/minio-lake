@@ -10,6 +10,8 @@ services:
       - ./trino-entrypoint.sh:/trino-entrypoint.sh
     networks:
       - trino-network
+    depends_on:
+      - hive-metastore
     command: /trino-entrypoint.sh
 
   mariadb:
