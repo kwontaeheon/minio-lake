@@ -60,24 +60,42 @@ services:
     # command: server /data
     networks:
       - trino-network
-
-  jupyter:
-    image: 'jupyter/all-spark-notebook:latest'
-    ports:
-      - '8800:8888'
-      - '4040:4040'
+  zeppelin:
+    image: apache/zeppelin:0.10.0
+    ports: 
+      - '8800:8080'
     environment:
-      JUPYTER_TOKEN: rnjsxogjs@1
-      PYSPARK_SUBMIT_ARGS: --packages org.apache.iceberg:iceberg-spark-runtime-3.2_2.12:0.13.1,org.apache.iceberg:iceberg-hive-runtime:0.13.1,org.apache.hadoop:hadoop-aws:3.3.1,software.amazon.awssdk:bundle:2.15.40,software.amazon.awssdk:url-connection-client:2.15.40 --conf spark.sql.catalog.spark_catalog=org.apache.iceberg.spark.SparkSessionCatalog --conf spark.sql.catalog.spark_catalog.type=hive --conf spark.sql.catalog.spark_catalog.cache-enabled=false  --conf spark.sql.catalog.spark_catalog.warehouse=s3a://hive/ --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem --conf spark.sql.catalog.spark_catalog.uri=thrift://hive-metastore:9083 --conf spark.sql.catalog.spark_catalog.hadoop.fs.s3a.endpoint=http://minio:9000 --conf spark.sql.catalog.spark_catalog.s3a.endpoint=http://minio:9000 --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions pyspark-shell
-      AWS_ACCESS_KEY_ID: hive
-      AWS_SECRET_ACCESS_KEY: '#202203sdf'
-      AWS_REGION: us-east-1
+      ZEPPELIN_ADDR: '0.0.0.0'
+      ZEPPELIN_NOTEBOOK_DIR: '/notebook'
+      ZEPPELIN_LOG_DIR: '/logs'
+      ZEPPELIN_MEM: '-Xmx3g  -XX:MaxMetaspaceSize=1g'
+      ZEPPELIN_NOTEBOOK_CRON_ENABLE: 'true'
+      ZEPPELIN_INTERPRETER_DIR: '/interpreter'
     volumes:
-      - ./work:/home/jovyan/work
-      - ./hive-site.xml:/usr/local/spark/conf/hive-site.xml
-      - ./core-site.xml:/usr/local/spark/conf/core-site.xml
+      - ./zeppelin/logs:/logs
+      - ./zeppelin/data:/data
+      - ./zeppelin/notebook:/notebook
+      - ./zeppelin/interpreter:/interpreter
+      - ./zeppelin/conf:/opt/zeppelin/conf
     networks:
       - trino-network
+  # jupyter:
+  #   image: 'jupyter/all-spark-notebook:latest'
+  #   ports:
+  #     - '8800:8888'
+  #     - '4040:4040'
+  #   environment:
+  #     JUPYTER_TOKEN: rnjsxogjs@1
+  #     PYSPARK_SUBMIT_ARGS: --packages org.apache.iceberg:iceberg-spark-runtime-3.2_2.12:0.13.1,org.apache.iceberg:iceberg-hive-runtime:0.13.1,org.apache.hadoop:hadoop-aws:3.3.1,software.amazon.awssdk:bundle:2.15.40,software.amazon.awssdk:url-connection-client:2.15.40 --conf spark.sql.catalog.spark_catalog=org.apache.iceberg.spark.SparkSessionCatalog --conf spark.sql.catalog.spark_catalog.type=hive --conf spark.sql.catalog.spark_catalog.cache-enabled=false  --conf spark.sql.catalog.spark_catalog.warehouse=s3a://hive/ --conf spark.hadoop.fs.s3a.impl=org.apache.hadoop.fs.s3a.S3AFileSystem --conf spark.sql.catalog.spark_catalog.uri=thrift://hive-metastore:9083 --conf spark.sql.catalog.spark_catalog.hadoop.fs.s3a.endpoint=http://minio:9000 --conf spark.sql.catalog.spark_catalog.s3a.endpoint=http://minio:9000 --conf spark.sql.extensions=org.apache.iceberg.spark.extensions.IcebergSparkSessionExtensions pyspark-shell
+  #     AWS_ACCESS_KEY_ID: hive
+  #     AWS_SECRET_ACCESS_KEY: '#202203sdf'
+  #     AWS_REGION: us-east-1
+  #   volumes:
+  #     - ./work:/home/jovyan/work
+  #     - ./hive-site.xml:/usr/local/spark/conf/hive-site.xml
+  #     - ./core-site.xml:/usr/local/spark/conf/core-site.xml
+  #   networks:
+  #     - trino-network
 
 #volumes:
 #  minio-data:

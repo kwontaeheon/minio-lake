@@ -1,0 +1,113 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,                                                                                               
+// Version 2.0, in this case for Zeppelin: Shell interpreter                                                                                  
+// ------------------------------------------------------------------
+
+Zeppelin: Shell interpreter
+Copyright 2013-2021 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software, FindBugs-Annotations, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, FindBugs-jsr305, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Gson, developed by                                                                                                   
+Google, Inc. (http://www.google.com).
+This product includes software, error-prone annotations, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Guava: Google Core Libraries for Java, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, J2ObjC Annotations, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, jinjava, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Apache Commons IO, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, javax.annotation API, developed by                                                                                                   
+GlassFish Community (https://glassfish.java.net).
+This product includes software, Java Servlet API, developed by                                                                                                   
+GlassFish Community (https://glassfish.dev.java.net).
+This product includes software, WebSocket server API, developed by                                                                                                   
+Oracle (http://www.oracle.com).
+This product includes software, WebSocket client API, developed by                                                                                                   
+Oracle (http://www.oracle.com).
+This product includes software, Apache Log4j, developed by                                                                                                   
+Apache Software Foundation (http://www.apache.org).
+This product includes software, Java Native Access, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Java Native Access Platform, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Apache Commons Exec, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Apache Commons Lang, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, Zeppelin: Interpreter Shaded, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Checker Qual, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Animal Sniffer Annotations, developed by                                                                                                   
+Codehaus (http://codehaus.org).
+This product includes software, Jetty :: Servlet Annotations, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Asynchronous HTTP Client, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Http Utility, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: IO Utility, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: JNDI Naming, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Plus, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Security, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Server Core, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Servlet Handling, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Utilities, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Webapp Application Support, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: XML utilities, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: javax.websocket :: Client Implementation, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: javax.websocket.server :: Server Implementation, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: API, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: Client, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: Common, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: Server, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Jetty :: Websocket :: Servlet Interface, developed by                                                                                                   
+Webtide (https://webtide.com).
+This product includes software, Javassist, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, JetBrains Java Annotations, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, pty4j, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, purejavacomm, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, jsoup, developed by                                                                                                   
+Jonathan Hedley (http://jonathanhedley.com/).
+This product includes software, asm, developed by                                                                                                   
+OW2 (http://www.ow2.org/).
+This product includes software, asm-analysis, developed by                                                                                                   
+OW2 (http://www.ow2.org/).
+This product includes software, asm-commons, developed by                                                                                                   
+OW2 (http://www.ow2.org/).
+This product includes software, asm-tree, developed by                                                                                                   
+OW2 (http://www.ow2.org/).
+This product includes software, JCL 1.2 implemented over SLF4J, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J API Module, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J LOG4J-12 Binding, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).

@@ -1,0 +1,167 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,                                                                                               
+// Version 2.0, in this case for Zeppelin: Markdown interpreter                                                                                  
+// ------------------------------------------------------------------
+
+Zeppelin: Markdown interpreter
+Copyright 2013-2021 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software, ICU4J, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Openhtmltopdf Core Renderer, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Openhtmltopdf Jsoup to DOM Converter, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Openhtmltopdf PDF Rendering (Apache PDF-BOX 2), developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Openhtmltopdf RTL Support, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java core, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-all, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for abbreviations in text, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for admonition syntax, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension to generate anchor links for headers, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for converting | to aside tags, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for attributes, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for autolinking, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for definition, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for emoji shortcuts, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for enumerated reference, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for escaped_character, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for footnotes, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for GitHub issue syntax, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for strikethrough, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for generating GitHub style task list items, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for GitHub user syntax, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for GitLab Flavoured Markdown, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for ins, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for jekyll_front_matter, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for jekyll tag parsing, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for processing macros, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for HTML5 media tags, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for superscript, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for tables, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for toc, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for typographic, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for wiki links, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for xwiki application specific macros, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for YAML front matter, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-ext-youtube-embedded, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java HTML to Markdown extensible converter, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for jira_converter, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for markdown to pdf conversion, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java pegdown profile, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java ast utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java builder utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java collection utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java data utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java dependency utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java format utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java html utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java misc utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java options utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java sequence utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java visitor utilities, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, flexmark-java extension for YouTrack conversion, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Apache Commons Codec, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, PDFBox-Graphics2d, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Apache Log4j, developed by                                                                                                   
+Apache Software Foundation (http://www.apache.org).
+This product includes software, Apache Commons Exec, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Apache Commons Lang, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, Apache HttpClient, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Apache HttpCore, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Apache FontBox, developed by                                                                                                   
+The Apache Software Foundation (http://pdfbox.apache.org).
+This product includes software, Apache PDFBox, developed by                                                                                                   
+The Apache Software Foundation (http://pdfbox.apache.org).
+This product includes software, Apache XmpBox, developed by                                                                                                   
+The Apache Software Foundation (http://pdfbox.apache.org).
+This product includes software, Zeppelin: Interpreter Shaded, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, markdown4j, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, IntelliJ IDEA Annotations, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, jsoup Java HTML Parser, developed by                                                                                                   
+Jonathan Hedley (http://jonathanhedley.com/).
+This product includes software, autolink-java, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, ASM Core, developed by                                                                                                   
+ObjectWeb (http://www.objectweb.org/).
+This product includes software, ASM Analysis, developed by                                                                                                   
+ObjectWeb (http://www.objectweb.org/).
+This product includes software, ASM Tree, developed by                                                                                                   
+ObjectWeb (http://www.objectweb.org/).
+This product includes software, ASM Util, developed by                                                                                                   
+ObjectWeb (http://www.objectweb.org/).
+This product includes software, parboiled-core, developed by                                                                                                   
+org.parboiled (http://parboiled.org).
+This product includes software, parboiled-java, developed by                                                                                                   
+org.parboiled (http://parboiled.org).
+This product includes software, pegdown, developed by                                                                                                   
+org.pegdown (http://pegdown.org).
+This product includes software, JCL 1.2 implemented over SLF4J, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J API Module, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J LOG4J-12 Binding, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).

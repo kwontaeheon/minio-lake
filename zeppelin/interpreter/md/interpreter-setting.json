@@ -1,0 +1,21 @@
+[
+  {
+    "group": "md",
+    "name": "md",
+    "className": "org.apache.zeppelin.markdown.Markdown",
+    "properties": {
+      "markdown.parser.type": {
+        "envName": "MARKDOWN_PARSER_TYPE",
+        "propertyName": "markdown.parser.type",
+        "defaultValue": "flexmark",
+        "description": "Markdown Parser Type. Available values: pegdown, markdown4j, flexmark. Default = flexmark",
+        "type": "string"
+      }
+    },
+    "editor": {
+      "language": "markdown",
+      "editOnDblClick": true,
+      "completionSupport": false
+    }
+  }
+]

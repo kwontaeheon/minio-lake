@@ -1,0 +1,36 @@
+{
+  "authInfo": {
+    "2H56KXTJB": {
+      "readers": [],
+      "owners": [],
+      "writers": [],
+      "runners": []
+    },
+    "2H6FHSKH9": {
+      "readers": [],
+      "owners": [],
+      "writers": [],
+      "runners": []
+    },
+    "2H5Y83CAS": {
+      "readers": [],
+      "owners": [],
+      "writers": [],
+      "runners": []
+    },
+    "2H3BACAHH": {
+      "readers": [],
+      "owners": [
+        "admin"
+      ],
+      "writers": [],
+      "runners": []
+    },
+    "2H4BK3AYD": {
+      "readers": [],
+      "owners": [],
+      "writers": [],
+      "runners": []
+    }
+  }
+}

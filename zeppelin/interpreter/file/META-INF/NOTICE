@@ -1,0 +1,49 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,                                                                                               
+// Version 2.0, in this case for Zeppelin: File System Interpreters                                                                                  
+// ------------------------------------------------------------------
+
+Zeppelin: File System Interpreters
+Copyright 2013-2021 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software, Gson, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, javax.annotation API, developed by                                                                                                   
+GlassFish Community (https://glassfish.java.net).
+This product includes software, javax.ws.rs-api, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com/).
+This product includes software, Apache Log4j, developed by                                                                                                   
+Apache Software Foundation (http://www.apache.org).
+This product includes software, Apache Commons Exec, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Apache Commons Lang, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, Zeppelin: Interpreter Shaded, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, HK2 API module, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com).
+This product includes software, ServiceLocator Default Implementation, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com).
+This product includes software, HK2 Implementation Utilities, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com).
+This product includes software, OSGi resource locator bundle - used by various API providers that rely on META-INF/services mechanism to locate providers., developed by                                                                                                   
+GlassFish Community (https://glassfish.dev.java.net).
+This product includes software, aopalliance version 1.0 repackaged as a module, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com).
+This product includes software, javax.inject:1 as OSGi bundle, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com).
+This product includes software, jersey-repackaged-guava, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com/).
+This product includes software, jersey-core-common, developed by                                                                                                   
+Oracle Corporation (http://www.oracle.com/).
+This product includes software, Javassist, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, JCL 1.2 implemented over SLF4J, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J API Module, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J LOG4J-12 Binding, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).

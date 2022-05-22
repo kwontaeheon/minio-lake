@@ -1,0 +1,85 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,                                                                                               
+// Version 2.0, in this case for Zeppelin: Python interpreter                                                                                  
+// ------------------------------------------------------------------
+
+Zeppelin: Python interpreter
+Copyright 2013-2021 The Apache Software Foundation
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+This product includes software, com.google.api.grpc:proto-google-common-protos, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, FindBugs-jsr305, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Gson, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, error-prone annotations, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Guava: Google Core Libraries for Java, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Protocol Buffers [Core], developed by                                                                                                   
+Google (http://www.google.com/).
+This product includes software, Apache Commons Codec, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, Apache Commons IO, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, io.grpc:grpc-context, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, io.grpc:grpc-core, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, io.grpc:grpc-netty, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, io.grpc:grpc-protobuf, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, io.grpc:grpc-protobuf-lite, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, io.grpc:grpc-stub, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Netty/Buffer, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Codec, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Codec/HTTP, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Codec/HTTP2, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Codec/Socks, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Common, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Handler, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Handler/Proxy, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Resolver, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, Netty/Transport, developed by                                                                                                   
+The Netty Project (http://netty.io/).
+This product includes software, OpenCensus, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, OpenCensus, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Apache Log4j, developed by                                                                                                   
+Apache Software Foundation (http://www.apache.org).
+This product includes software, Py4J, developed by                                                                                                   
+$project.organization.name ($project.organization.url).
+This product includes software, Apache Commons Exec, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Apache Commons Lang, developed by                                                                                                   
+The Apache Software Foundation (https://www.apache.org/).
+This product includes software, Zeppelin: Interpreter Shaded, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Zeppelin: Jupyter Interpreter, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Zeppelin: Jupyter Interpreter Shaded, developed by                                                                                                   
+The Apache Software Foundation (http://www.apache.org/).
+This product includes software, Animal Sniffer Annotations, developed by                                                                                                   
+MojoHaus (http://www.mojohaus.org).
+This product includes software, JCL 1.2 implemented over SLF4J, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J API Module, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
+This product includes software, SLF4J LOG4J-12 Binding, developed by                                                                                                   
+QOS.ch (http://www.qos.ch).
