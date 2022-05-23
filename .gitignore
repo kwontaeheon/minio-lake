@@ -1,8 +1,12 @@
 /work/metastore_db/
 /work/spark-warehouse/
-/data
+/data/hive/
+/data/delta/
+/data/.minio.sys/
+
+*.sys
 __pycache__/
 logs/
 .ipynb_checkpoints/
-*.jar
+
 *.log

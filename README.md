@@ -12,8 +12,8 @@ Docker에서 가용한 4코어 이상의 CPU와 10GB 수준의 Memory
 
 ## start MinIO-lake
 ```bash
-$ git clone https://github.com/kwontaeheon/minio-lake.git
-$ cd minio-lake 
+$ git clone https://github.com/kwontaeheon/nft-offerator.git
+$ cd nft-offerator/minio-lake 
 $ docker-compose up -d
 ```
 
