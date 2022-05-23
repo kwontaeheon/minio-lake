@@ -1,0 +1,220 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n\n* FP를 기반으로 LTV를 구하고, Listing 으로부터 Borrower의 Duration 을 체크해야 한다.\n* Offer가 존재하는 경우와 아닌 경우에 따라 다른 Offer를 제시해야 한다.\n* Floor price가 급락하는 경우 Offer를 Drop해야 한다.\n* 최신 데이터 업데이트가 10분 이상 delay가 되면, 현재 시장 상황을 판단할 수 없다고 판단하여, 모든 offer를 드랍해야 한다.\n\n\n* LTV를 구하는것 까지는 개발이 되었으나, Listing 데이터와 다른 Lender의 Offer 데이터를 활용하여 Offer를 제시하는것까지는 개발하지 못함 (TODO)",
+      "user": "anonymous",
+      "dateUpdated": "2022-05-22 10:42:30.458",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/markdown",
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eFP를 기반으로 LTV를 구하고, Listing 으로부터 Borrower의 Duration 을 체크해야 한다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eOffer가 존재하는 경우와 아닌 경우에 따라 다른 Offer를 제시해야 한다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eFloor price가 급락하는 경우 Offer를 Drop해야 한다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e최신 데이터 업데이트가 10분 이상 delay가 되면, 현재 시장 상황을 판단할 수 없다고 판단하여, 모든 offer를 드랍해야 한다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eLTV를 구하는것 까지는 개발이 되었으나, Listing 데이터와 다른 Lender의 Offer 데이터를 활용하여 Offer를 제시하는것까지는 개발하지 못함 (TODO)\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653215259436_1991847475",
+      "id": "paragraph_1653215259436_1991847475",
+      "dateCreated": "2022-05-22 10:27:39.438",
+      "dateStarted": "2022-05-23 00:40:00.007",
+      "dateFinished": "2022-05-23 00:40:02.151",
+      "status": "FINISHED"
+    },
+    {
+      "text": "SELECT DISTINCT\n   ADDRESS\n   , LEAST(0.6,  LEAST(CAST(FLOORPRICE AS DOUBLE)\n              ,  CAST(FLOORPRICE AS DOUBLE) + CAST(FLOORCHANGE24H AS DOUBLE)\n              , CAST(FLOORPRICE AS DOUBLE) + CAST(FLOORCHANGE7D AS DOUBLE)\n              , CAST(FLOORPRICE AS DOUBLE) + CAST(FLOORCHANGE30D AS DOUBLE)\n              )\n             / GREATEST(CAST(FLOORPRICE as double)\n              ,  CAST(FLOORPRICE AS DOUBLE) + CAST(FLOORCHANGE24H AS DOUBLE)\n              , CAST(FLOORPRICE AS DOUBLE) + CAST( FLOORCHANGE7D AS DOUBLE)\n              , CAST(FLOORPRICE AS DOUBLE) + CAST(FLOORCHANGE30D AS DOUBLE)\n              ))  AS MAX_LTV\nFROM FP\n",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:02:18.543",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ADDRESS": "string",
+                      "MAX_LTV": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "ADDRESS\tMAX_LTV\n0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D\t0.6\n0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e\t0.6\n0xED5AF388653567Af2F388E6224dC7C4b3241C544\t0.6\n0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B\t0.6\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653210186230_1555242078",
+      "id": "paragraph_1653210186230_1555242078",
+      "dateCreated": "2022-05-22 09:03:06.230",
+      "dateStarted": "2022-05-23 01:02:18.552",
+      "dateFinished": "2022-05-23 01:02:18.994",
+      "status": "FINISHED"
+    },
+    {
+      "text": "show tables",
+      "user": "anonymous",
+      "dateUpdated": "2022-05-23 00:33:47.028",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "Table": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "Table\nfp\nlistings\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653210198465_1303437315",
+      "id": "paragraph_1653210198465_1303437315",
+      "dateCreated": "2022-05-22 09:03:18.467",
+      "dateStarted": "2022-05-23 00:40:05.020",
+      "dateFinished": "2022-05-23 00:40:05.203",
+      "status": "FINISHED"
+    },
+    {
+      "text": "",
+      "user": "anonymous",
+      "dateUpdated": "2022-05-22 10:43:16.718",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653216196344_911715850",
+      "id": "paragraph_1653216196344_911715850",
+      "dateCreated": "2022-05-22 10:43:16.358",
+      "status": "FINISHED"
+    }
+  ],
+  "name": "Offers",
+  "id": "2H3BACAHH",
+  "defaultInterpreterGroup": "jdbc",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": true,
+    "looknfeel": "default",
+    "personalizedMode": "false",
+    "cronExecutingUser": "admin",
+    "cronExecutingRoles": "[\"admin\"]",
+    "cron": "0 0/5 * * * ?"
+  },
+  "info": {
+    "inIsolatedMode": true,
+    "startTime": "2022-05-23_00-40-00"
+  }
+}

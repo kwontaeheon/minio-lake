@@ -1,0 +1,361 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sh\npip3 install trino[sqlalchemy] joblib",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:01:11.874",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false,
+          "completionSupport": false,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sh",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Collecting trino[sqlalchemy]\n  Downloading trino-0.313.0-py3-none-any.whl (36 kB)\nCollecting joblib\n  Downloading joblib-1.1.0-py2.py3-none-any.whl (306 kB)\nRequirement already satisfied: requests in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from trino[sqlalchemy]) (2.26.0)\nRequirement already satisfied: pytz in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from trino[sqlalchemy]) (2021.1)\nRequirement already satisfied: sqlalchemy~\u003d1.3 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from trino[sqlalchemy]) (1.4.23)\nRequirement already satisfied: importlib-metadata in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from sqlalchemy~\u003d1.3-\u003etrino[sqlalchemy]) (4.6.4)\nRequirement already satisfied: greenlet!\u003d0.4.17 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from sqlalchemy~\u003d1.3-\u003etrino[sqlalchemy]) (1.1.1)\nRequirement already satisfied: zipp\u003e\u003d0.5 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from importlib-metadata-\u003esqlalchemy~\u003d1.3-\u003etrino[sqlalchemy]) (3.5.0)\nRequirement already satisfied: typing-extensions\u003e\u003d3.6.4 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from importlib-metadata-\u003esqlalchemy~\u003d1.3-\u003etrino[sqlalchemy]) (3.10.0.0)\nRequirement already satisfied: certifi\u003e\u003d2017.4.17 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from requests-\u003etrino[sqlalchemy]) (2021.5.30)\nRequirement already satisfied: idna\u003c4,\u003e\u003d2.5 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from requests-\u003etrino[sqlalchemy]) (3.1)\nRequirement already satisfied: urllib3\u003c1.27,\u003e\u003d1.21.1 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from requests-\u003etrino[sqlalchemy]) (1.26.6)\nRequirement already satisfied: charset-normalizer~\u003d2.0.0 in /opt/conda/envs/python_3_with_R/lib/python3.7/site-packages (from requests-\u003etrino[sqlalchemy]) (2.0.0)\nInstalling collected packages: trino, joblib\nSuccessfully installed joblib-1.1.0 trino-0.313.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653208620083_60932117",
+      "id": "paragraph_1653208620083_60932117",
+      "dateCreated": "2022-05-22 08:37:00.085",
+      "dateStarted": "2022-05-23 01:01:11.885",
+      "dateFinished": "2022-05-23 01:01:15.317",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%sh\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-05-23 00:25:42.467",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653265542467_1212821706",
+      "id": "paragraph_1653265542467_1212821706",
+      "dateCreated": "2022-05-23 00:25:42.467",
+      "dateStarted": "2022-05-23 00:40:03.117",
+      "dateFinished": "2022-05-23 00:40:03.130",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%jdbc\ncreate schema if not exists iceberg.hive with (location\u003d\u0027s3a://hive/\u0027)\n",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:00:57.463",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : 0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653215517472_1730870991",
+      "id": "paragraph_1653215517472_1730870991",
+      "dateCreated": "2022-05-22 10:31:57.475",
+      "dateStarted": "2022-05-23 01:00:57.476",
+      "dateFinished": "2022-05-23 01:01:01.171",
+      "status": "FINISHED"
+    },
+    {
+      "text": "projects \u003d [\u00270xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\u0027,\n            \u00270x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b\u0027,\n            \u00270xed5af388653567af2f388e6224dc7c4b3241c544\u0027,\n            \u00270x8a90cab2b38dba80c64b7734e58ee1db38b8992e\u0027]\n",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:01:01.470",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653211809730_362481932",
+      "id": "paragraph_1653211809730_362481932",
+      "dateCreated": "2022-05-22 09:30:09.737",
+      "dateStarted": "2022-05-23 01:01:01.480",
+      "dateFinished": "2022-05-23 01:01:06.463",
+      "status": "FINISHED"
+    },
+    {
+      "text": "from pandas import DataFrame \nfrom sqlalchemy import create_engine\nfrom datetime import datetime\n\n\nengine \u003d create_engine(\u0027trino://trino@trino:8080/iceberg/hive\u0027)\n\ndef insert_data(df: DataFrame, table: str) -\u003e None:\n    insert_type \u003d \u00271\u0027\n    current_time \u003d datetime.now().strftime(\"%Y-%m-%d %H:%M:%S\")\n    print(current_time)\n    df[\u0027creation_time\u0027] \u003d current_time\n    try:\n        #this will fail if there is a new column\n        df.to_sql(table, con\u003dengine, if_exists\u003d\u0027append\u0027, index\u003dFalse)\n    except BaseException as e:\n        print(\u0027exception\u0027)\n        origin_data \u003d pd.read_sql(f\u0027SELECT * FROM {table}\u0027, engine)\n        df2 \u003d pd.concat([df, origin_data])\n        df2.to_sql(name\u003dtable, con\u003dengine, if_exists \u003d \u0027replace\u0027, index\u003dFalse)\n        insert_type \u003d \u00272\u0027\n    finally:\n        print(f\u0027{table}: insert_type: {insert_type}\u0027)",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:01:17.638",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653212082023_1377289612",
+      "id": "paragraph_1653212082023_1377289612",
+      "dateCreated": "2022-05-22 09:34:42.026",
+      "dateStarted": "2022-05-23 01:01:17.647",
+      "dateFinished": "2022-05-23 01:01:17.806",
+      "status": "FINISHED"
+    },
+    {
+      "text": "# %%\n# 각 프로젝트별 담보 아이템 리스트\nimport json, requests\nimport pandas as pd\n\ndef crawl_listings(collection_address: str):\n# collection_address \u003d \"0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\"\n    url \u003d \"https://api.nftfi.com/listings\"\n    headers \u003d {\n        \"x-filters\": json.dumps({\n            \"nftCollateralContract\":[collection_address]\n        }),\n        \"x-paging\": json.dumps({\n            \"limit\": 500,\n            \"skip\": 0,\n            \"sort\": None,\n        })\n    }\n    \n    res \u003d requests.get(url, headers\u003dheaders)\n    data \u003d res.json()\n    lowered_data \u003d []\n    for l in data:\n        lowered_item \u003d  {k.lower(): v for k, v in l.items()}\n        lowered_data.append(lowered_item)\n    print(collection_address)\n    df \u003d pd.DataFrame.from_records(lowered_data).astype(str)\n    insert_data(df, \u0027listings\u0027)\n    print(\u0027fin\u0027)\n\n\n# 각 프로젝트별 Floor Price\ndef crawl_fp(project: str):\n    url \u003d f\u0027https://api.looksrare.org/api/v1/collections/stats?address\u003d{project}\u0027\n    data \u003d requests.get(url).json().get(\u0027data\u0027)\n    data \u003d  {k.lower(): v for k, v in data.items()}\n    df \u003d pd.DataFrame.from_records([data]).astype(str)\n    insert_data(df, \u0027fp\u0027)\n    \n# TODO: 병렬처리 구현\n#from joblib import Parallel, delayed\n# Parallel(n_jobs\u003d4, prefer\u003d\"threads\")(delayed(crawl_listings)(collection_address) for collection_address in projects)\n  \nfor collection_address in projects:\n    crawl_listings(collection_address)\n    crawl_fp(collection_address)",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:01:19.372",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "lineNumbers": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\n2022-05-23 01:01:19\nlistings: insert_type: 1\nfin\n2022-05-23 01:01:33\nfp: insert_type: 1\n0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b\n2022-05-23 01:01:34\nlistings: insert_type: 1\nfin\n2022-05-23 01:01:43\nfp: insert_type: 1\n0xed5af388653567af2f388e6224dc7c4b3241c544\n2022-05-23 01:01:44\nlistings: insert_type: 1\nfin\n2022-05-23 01:01:50\nfp: insert_type: 1\n0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\n2022-05-23 01:01:51\nlistings: insert_type: 1\nfin\n2022-05-23 01:02:04\nfp: insert_type: 1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653208260358_2004293464",
+      "id": "paragraph_1653208260358_2004293464",
+      "dateCreated": "2022-05-22 08:31:00.361",
+      "dateStarted": "2022-05-23 01:01:19.381",
+      "dateFinished": "2022-05-23 01:02:05.259",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%jdbc\nselect * from listings limit 10",
+      "user": "admin",
+      "dateUpdated": "2022-05-23 01:02:11.384",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_id": "string",
+                      "nftcollateralcontract": "string",
+                      "nftcollateralid": "string",
+                      "__v": "string",
+                      "borrower": "string",
+                      "contractname": "string",
+                      "desiredloancurrency": "string",
+                      "desiredloancurrencycontract": "string",
+                      "desiredloanduration": "string",
+                      "desiredloanprincipalamount": "string",
+                      "desiredrepaymentamount": "string",
+                      "listeddate": "string",
+                      "loaninterestratefordurationinbasispoints": "string",
+                      "maxloanduration": "string",
+                      "maximumrepaymentamount": "string",
+                      "minloanduration": "string",
+                      "nftkey": "string",
+                      "nonce": "string",
+                      "referralfeeinbasispoints": "string",
+                      "revenuesharepartner": "string",
+                      "status": "string",
+                      "whitelisted": "string",
+                      "name": "string",
+                      "projectname": "string",
+                      "description": "string",
+                      "imageurl": "string",
+                      "animationurl": "string",
+                      "traits": "string",
+                      "datauri": "string",
+                      "signedmessage": "string",
+                      "creation_time": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "_id\tnftcollateralcontract\tnftcollateralid\t__v\tborrower\tcontractname\tdesiredloancurrency\tdesiredloancurrencycontract\tdesiredloanduration\tdesiredloanprincipalamount\tdesiredrepaymentamount\tlisteddate\tloaninterestratefordurationinbasispoints\tmaxloanduration\tmaximumrepaymentamount\tminloanduration\tnftkey\tnonce\treferralfeeinbasispoints\trevenuesharepartner\tstatus\twhitelisted\tname\tprojectname\tdescription\timageurl\tanimationurl\ttraits\tdatauri\tsignedmessage\tcreation_time\n62897c067838997afb1bed65\t0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\t8429\t0\t0x7eb413211a9de1cd2fe8b8bb6055636c43f7d206\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t90\t80000000000000000000\t83945205000000000000\t2022-05-21T23:55:50.005Z\t0\t1654041349027.0\t0\t0.0\t84290xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\t3627230701530627772633420833536294076667024260088561945714831734191467467298\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tNone\tBoredApeYachtClub\tThe Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation. Visit www.BoredApeYachtClub.com for more details.\thttps://img.seadn.io/files/cdefef8dd443df258df4eb67229088cd.png?auto\u003dformat\tNone\t[{\u0027trait_type\u0027: \u0027Mouth\u0027, \u0027value\u0027: \u0027Bored\u0027}, {\u0027trait_type\u0027: \u0027Eyes\u0027, \u0027value\u0027: \u0027Coins\u0027}, {\u0027trait_type\u0027: \u0027Background\u0027, \u0027value\u0027: \u0027Aquamarine\u0027}, {\u0027trait_type\u0027: \u0027Hat\u0027, \u0027value\u0027: \"King\u0027s Crown\"}, {\u0027trait_type\u0027: \u0027Fur\u0027, \u0027value\u0027: \u0027Pink\u0027}, {\u0027trait_type\u0027: \u0027Clothes\u0027, \u0027value\u0027: \u0027Black Holes T\u0027}]\tipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/8429\tnan\t2022-05-23 01:01:19\n6287a3c37838997afbc7be93\t0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t8965\t0\t0x235cc1815f11cdeb941ddb342ba57f8bed806841\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\tNone\t10000000000000000000\tNone\t2022-05-20T14:20:51.453Z\t0\t1653920446925\t0\t0\t89650x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t66660865107314571340406407567449377891815606757672723518933830590128286440617\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tDoodle #8965\tDoodles\tA community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury.\thttps://img.seadn.io/files/82aed23e36348675cd6f3299161046cb.png?h\u003d1024\u0026w\u003d1024\u0026auto\u003dformat\tNone\t[{\u0027trait_type\u0027: \u0027body\u0027, \u0027value\u0027: \u0027blue backpack\u0027, \u0027display_type\u0027: None, \u0027max_value\u0027: None, \u0027trait_count\u0027: 298, \u0027order\u0027: None}, {\u0027trait_type\u0027: \u0027piercing\u0027, \u0027value\u0027: \u0027hoop\u0027, \u0027display_type\u0027: None, \u0027max_value\u0027: None, \u0027trait_count\u0027: 1045, \u0027order\u0027: None}, {\u0027trait_type\u0027: \u0027hair\u0027, \u0027value\u0027: \u0027pink\u0027, \u0027display_type\u0027: None, \u0027max_value\u0027: None, \u0027trait_count\u0027: 250, \u0027order\u0027: None}, {\u0027trait_type\u0027: \u0027face\u0027, \u0027value\u0027: \u0027happy\u0027, \u0027display_type\u0027: None, \u0027max_value\u0027: None, \u0027trait_count\u0027: 744, \u0027order\u0027: None}, {\u0027trait_type\u0027: \u0027head\u0027, \u0027value\u0027: \u0027blue\u0027, \u0027display_type\u0027: None, \u0027max_value\u0027: None, \u0027trait_count\u0027: 1042, \u0027order\u0027: None}, {\u0027trait_type\u0027: \u0027background\u0027, \u0027value\u0027: \u0027gradient 1\u0027, \u0027display_type\u0027: None, \u0027max_value\u0027: None, \u0027trait_count\u0027: 659, \u0027order\u0027: None}]\tipfs://QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/8965\tnan\t2022-05-23 01:01:51\n6282bab213cac8189d7334e4\t0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t968\t0\t0x25eba3e750b660771f11c9ec26cc8a5f6f2c9ce4\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t7\t32000000000000000000\t32460274000000000000\t2022-05-16T20:57:22.026Z\t0\t1653599469046\t0\t0\t9680x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t57324186557637560691505773144182846040137578255459740566689378791546353228551\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tDoodle #968\tDoodles\tA community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian–based illustrator, designer, animator and muralist.\thttps://ipfs.io/ipfs/QmTXp9t8RooTcBoVcm255VnrC4XxxoP4x6h1EoN2Wz7kp3\tNone\t[{\u0027trait_type\u0027: \u0027face\u0027, \u0027value\u0027: \u0027designer glasses\u0027}, {\u0027trait_type\u0027: \u0027hair\u0027, \u0027value\u0027: \u0027blue afro\u0027}, {\u0027trait_type\u0027: \u0027body\u0027, \u0027value\u0027: \u0027rainbow striped sweater\u0027}, {\u0027trait_type\u0027: \u0027background\u0027, \u0027value\u0027: \u0027gradient 4\u0027}, {\u0027trait_type\u0027: \u0027head\u0027, \u0027value\u0027: \u0027pale\u0027}]\tipfs://QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/968\tnan\t2022-05-23 01:01:51\n62737cac13cac8189db4d5ad\t0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t6107\t0\t0xb4083e91b794208478ac6a13c21ace04fd3faafe\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t30\t20000000000000000000\t20246575000000000000\t2022-05-05T07:28:44.377Z\t0\t1652599712855\t0\t0\t61070x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t89010566656243015856114947270149267262322096686997275649827533929399036510078\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tDoodle #6107\tDoodles\tA community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian–based illustrator, designer, animator and muralist.\thttps://lh3.googleusercontent.com/7FFruFRS9NyBt-iRbdL-IjhhFa2YjMTY3mghXK11cz2dIXL2IXprFQfu64vwxoAHGo659i8Y4mEtHEK2WYwbt6_JpMLVHJDxcrnVNQ\tNone\t[{\u0027trait_type\u0027: \u0027face\u0027, \u0027value\u0027: \u0027holographic beard\u0027}, {\u0027trait_type\u0027: \u0027hair\u0027, \u0027value\u0027: \u0027blue nerd\u0027}, {\u0027trait_type\u0027: \u0027body\u0027, \u0027value\u0027: \u0027pink and white jacket\u0027}, {\u0027trait_type\u0027: \u0027background\u0027, \u0027value\u0027: \u0027iridescent\u0027}, {\u0027trait_type\u0027: \u0027head\u0027, \u0027value\u0027: \u0027yellow\u0027}]\tipfs://QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/6107\tnan\t2022-05-23 01:01:51\n62148ee3708529f113759231\t0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b\t3414\t0\t0x6b52e83941eb10f9c613c395a834457559a80114\tv1.loan.fixed\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\tnan\t7\t200000000000000000000\tnan\t2022-02-22T07:21:07.225Z\tnan\tnan\tnan\tnan\t34140x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b\t56537930235899439373096638287138195687051865072789745283748442812083472234550\tnan\tnan\tlisted\tTrue\tCloneX #10594\tCloneX\t🧬 CLONE X 🧬  20,000 next-gen Avatars, by RTFKT and Takashi Murakami 🌸  If you own a clone with even one Murakami trait please read the terms regarding third-party content here: https://rtfkt.com/legal-2B.  You are not entitled to a commercial license if you own an avatar with any traits created by Murakami.\thttps://lh3.googleusercontent.com/IgcJZPci9iuXl5t1_n5k6F3hPi067UBIdz_KgGEIyog0CNPaCLoIWZOSaW_-D5QIpO8tMTPUOc0m7nGeQYNF_rflskq4qN2gVR38\tNone\t[{\u0027trait_type\u0027: \u0027DNA\u0027, \u0027value\u0027: \u0027Alien\u0027}, {\u0027trait_type\u0027: \u0027Back\u0027, \u0027value\u0027: \u0027Deity Arms\u0027}, {\u0027trait_type\u0027: \u0027Eye Color\u0027, \u0027value\u0027: \u0027WIDE-OPEN\u0027}, {\u0027trait_type\u0027: \u0027Hair\u0027, \u0027value\u0027: \u0027LLC Ponytail\u0027}, {\u0027trait_type\u0027: \u0027Jewelry\u0027, \u0027value\u0027: \u0027GLD CBLE\u0027}, {\u0027trait_type\u0027: \u0027Clothing\u0027, \u0027value\u0027: \u0027BLCK Jellyfish Tee\u0027}, {\u0027trait_type\u0027: \u0027Type\u0027, \u0027value\u0027: \u0027MURAKAMI DRIP\u0027}]\thttps://clonex-assets.rtfkt.com/3414\t0x91369b95c055284de9d77a8329f5e4c7a9d5337bcd63764b0210adccf1499a2a4ecad28d9574bc3a3ff7b4a0f26ac7ae25c5a5d5739f03180985c187844db4d81b\t2022-05-23 01:01:34\n627e36c913cac8189dbbf221\t0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t89\t0\t0x4b7bad6b57ec60ee861c07abfcb51d32e6d98395\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t30\t14000000000000000000\t14287671000000000000\t2022-05-13T10:45:29.623Z\t0\t1653302724471\t0\t0\t890x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t101164058346550702943232482390134566997012482021239339997036390424081885553845\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tDoodle #89\tDoodles\tA community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian–based illustrator, designer, animator and muralist.\thttps://lh3.googleusercontent.com/Kt98r8Kg-qTpikuF99OFt-cn-bULLfr0NKOGC9-5DqBBZV2cmlErEgTI929wDLUax6Cf1W24YmBwimjE6YwphP3SP1KShgNRNC0ZRg\tNone\t[{\u0027trait_type\u0027: \u0027face\u0027, \u0027value\u0027: \u0027bandana\u0027}, {\u0027trait_type\u0027: \u0027hair\u0027, \u0027value\u0027: \u0027holographic afro\u0027}, {\u0027trait_type\u0027: \u0027body\u0027, \u0027value\u0027: \u0027pink puffer\u0027}, {\u0027trait_type\u0027: \u0027background\u0027, \u0027value\u0027: \u0027gradient 4\u0027}, {\u0027trait_type\u0027: \u0027head\u0027, \u0027value\u0027: \u0027yellow\u0027}]\tipfs://QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/89\tnan\t2022-05-23 01:01:51\n628a791b2f4871269731bab1\t0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\t2306\t0\t0x4836ae11037f696693c2916834754fa6c2ecc27d\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\tNone\t250000000000000000000\tNone\t2022-05-22T17:55:39.794Z\t0\t1654106139129.0\t0\t0.0\t23060xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\t78538478808747090320941188180488645163818627528782266630793274111497652676002\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tNone\tBoredApeYachtClub\tThe Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation. Visit www.BoredApeYachtClub.com for more details.\thttps://img.seadn.io/files/0805a2dbf58daa4667be93ff68d8c575.png?h\u003d1024\u0026w\u003d1024\u0026auto\u003dformat\tNone\t[{\u0027trait_type\u0027: \u0027Earring\u0027, \u0027value\u0027: \u0027Silver Hoop\u0027}, {\u0027trait_type\u0027: \u0027Mouth\u0027, \u0027value\u0027: \u0027Bored\u0027}, {\u0027trait_type\u0027: \u0027Background\u0027, \u0027value\u0027: \u0027Orange\u0027}, {\u0027trait_type\u0027: \u0027Fur\u0027, \u0027value\u0027: \u0027Black\u0027}, {\u0027trait_type\u0027: \u0027Clothes\u0027, \u0027value\u0027: \u0027Black Suit\u0027}, {\u0027trait_type\u0027: \u0027Eyes\u0027, \u0027value\u0027: \u0027Bored\u0027}]\tipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/2306\tnan\t2022-05-23 01:01:19\n6286b9bc7838997afb95787a\t0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\t4237\t0\t0x7eb413211a9de1cd2fe8b8bb6055636c43f7d206\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t90\t80000000000000000000\t84931507000000000000\t2022-05-19T21:42:20.889Z\t0\t1653860539966.0\t0\t0.0\t42370xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d\t61999527465839095506220154730174129170602945217405536060421869887672832807213\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tNone\tBoredApeYachtClub\tThe Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape NFTs— unique digital collectibles living on the Ethereum blockchain. Your Bored Ape doubles as your Yacht Club membership card, and grants access to members-only benefits, the first of which is access to THE BATHROOM, a collaborative graffiti board. Future areas and perks can be unlocked by the community through roadmap activation. Visit www.BoredApeYachtClub.com for more details.\thttps://img.seadn.io/files/8eddc3a8dafb4abf4bce7b86f28f99f9.png?auto\u003dformat\tNone\t[{\u0027trait_type\u0027: \u0027Clothes\u0027, \u0027value\u0027: \u0027Hawaiian\u0027}, {\u0027trait_type\u0027: \u0027Hat\u0027, \u0027value\u0027: \"Girl\u0027s Hair Short\"}, {\u0027trait_type\u0027: \u0027Eyes\u0027, \u0027value\u0027: \u0027Cyborg\u0027}, {\u0027trait_type\u0027: \u0027Fur\u0027, \u0027value\u0027: \u0027Dark Brown\u0027}, {\u0027trait_type\u0027: \u0027Background\u0027, \u0027value\u0027: \u0027Aquamarine\u0027}, {\u0027trait_type\u0027: \u0027Mouth\u0027, \u0027value\u0027: \u0027Bored Unshaven\u0027}]\tipfs://QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/4237\tnan\t2022-05-23 01:01:19\n6254d91313cac8189def3e4a\t0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t4521\t0\t0x9a07f42060f6cc56845590fe93e0cfea4be66281\tv2.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t30\t20000000000000000000\tNone\t2022-04-12T01:42:43.474Z\t0\t1650591752292\t0\t0\t45210x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t33738456865319875576252612121973363969569611137816301115385805815261163658249\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tDoodle #4521\tDoodles\tA community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian–based illustrator, designer, animator and muralist.\thttps://lh3.googleusercontent.com/F5jDMSsNsiYjHy1RfF-u98TU-5dXiMQhMXMEshFxu0zGVpinZIqIYlf7NdSI-uNF55T7L8Bk5RK77o6jfEen1akMM3dR6gJB25w8NLs\tNone\t[{\u0027trait_type\u0027: \u0027face\u0027, \u0027value\u0027: \u0027default\u0027}, {\u0027trait_type\u0027: \u0027hair\u0027, \u0027value\u0027: \u0027pink long\u0027}, {\u0027trait_type\u0027: \u0027body\u0027, \u0027value\u0027: \u0027pink and white jacket\u0027}, {\u0027trait_type\u0027: \u0027background\u0027, \u0027value\u0027: \u0027pink\u0027}, {\u0027trait_type\u0027: \u0027head\u0027, \u0027value\u0027: \u0027gradient 1\u0027}]\tipfs://QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/4521\tnan\t2022-05-23 01:01:51\n6201d5a73bdf711f2a4e768a\t0x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t9495\t0\t0x8168ad95f56f768bff44a5c6b4cabc445cdeddff\tv1.loan.fixed\twETH\t0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2\t30\t70000000000000000000\t70863014000000000000\t2022-02-08T02:29:59.402Z\t0\t1652108760251\t0\t0\t94950x8a90cab2b38dba80c64b7734e58ee1db38b8992e\t27808278869194229540776766306066212075845694260555906993324281856950217974853\t0\t0x0000000000000000000000000000000000000000\tlisted\tTrue\tDoodle #9495\tDoodles\tA community-driven collectibles project featuring art by Burnt Toast. Doodles come in a joyful range of colors, traits and sizes with a collection size of 10,000. Each Doodle allows its owner to vote for experiences and activations paid for by the Doodles Community Treasury. Burnt Toast is the working alias for Scott Martin, a Canadian–based illustrator, designer, animator and muralist.\thttps://lh3.googleusercontent.com/yxfHNSuHnd7TDLpmk3SUyw1wvdb4SMcELoYeuF4WepKT2XTA4xoGtqqV-RdQYGG1QgjKUtN-SYlOuuMoqCotcaIRq6OlpA8gvGWq\tNone\t[{\u0027trait_type\u0027: \u0027face\u0027, \u0027value\u0027: \u002760s glasses\u0027}, {\u0027trait_type\u0027: \u0027body\u0027, \u0027value\u0027: \u0027grey hoodie\u0027}, {\u0027trait_type\u0027: \u0027background\u0027, \u0027value\u0027: \u0027blue\u0027}, {\u0027trait_type\u0027: \u0027head\u0027, \u0027value\u0027: \u0027rainbow\u0027}]\tipfs://QmPMc4tcBsMqLRuCQtPmPe84bpSjrC3Ky7t3JWuHXYB4aS/9495\t0x0c09d194706a008386f8737bf3b3fdfc593e9c553e7a1c6e170dfe50b5f47d4402f17fe7f4579e2a713e50e93e29858e5761b7d7c7e0adb1c15803eda3642c8b1b\t2022-05-23 01:01:51\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653214659297_1766834088",
+      "id": "paragraph_1653214659297_1766834088",
+      "dateCreated": "2022-05-22 10:17:39.304",
+      "dateStarted": "2022-05-23 01:02:11.392",
+      "dateFinished": "2022-05-23 01:02:12.701",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%jdbc\n",
+      "user": "anonymous",
+      "dateUpdated": "2022-05-23 00:33:33.664",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1653266013664_165484407",
+      "id": "paragraph_1653266013664_165484407",
+      "dateCreated": "2022-05-23 00:33:33.664",
+      "dateStarted": "2022-05-23 00:40:47.624",
+      "dateFinished": "2022-05-23 00:40:47.633",
+      "status": "FINISHED"
+    }
+  ],
+  "name": "수집 처리",
+  "id": "2H5Y83CAS",
+  "defaultInterpreterGroup": "python",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": true,
+    "looknfeel": "default",
+    "personalizedMode": "false",
+    "cronExecutingUser": "admin",
+    "cronExecutingRoles": "[\"admin\"]",
+    "cron": "0 0/5 * * * ?"
+  },
+  "info": {
+    "inIsolatedMode": true,
+    "startTime": "2022-05-23_00-40-00"
+  }
+}
